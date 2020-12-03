@@ -1,4 +1,4 @@
-package com.tegarprasetya.tugasoop2
+package com.android.oop2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
