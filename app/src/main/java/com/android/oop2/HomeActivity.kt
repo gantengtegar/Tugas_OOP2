@@ -3,7 +3,9 @@ package com.android.oop2
 import android.R
 import android.os.Bundle
 import android.view.View
+import androidx.annotation.Nullable
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentManager
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider.getApplicationContext
 
@@ -13,9 +15,9 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Companion.fragmentManager = supportFragmentManager
-        myAppDatabase = Room.databaseBuilder(
+        CustomerRoomDatbase = Room.databaseBuilder(
             applicationContext,
-            MyAppDatabase::class.java, "userdb"
+            CustomerRoomDatbase::class.java, "userdb"
         ).allowMainThreadQueries().build()
 
 
@@ -31,6 +33,6 @@ class HomeActivity : AppCompatActivity() {
 
     companion object {
         var fragmentManager: FragmentManager? = null
-        var myAppDatabase: MyAppDatabase? = null
+        var CustomerRoomDatbase: CustomerRoomDatbase? = null
     }
 }
