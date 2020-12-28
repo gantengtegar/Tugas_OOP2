@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.oop2">
+    package="co.twoh.uas">
 
     <application
         android:allowBackup="true"
@@ -9,13 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.android.oop2.MainActivity">
+        <activity android:name="co.twoh.uas.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="co.twoh.uas.RoomCreateActivity"/>
+        <activity android:name="co.twoh.uas.RoomReadActivity"/>
+        <activity android:name="co.twoh.uas.RoomReadSingleActivity"/>
     </application>
 
 </manifest>
